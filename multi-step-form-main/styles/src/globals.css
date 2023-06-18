@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-bg-mb {
+  background-image: url(../../assets/images/bg-sidebar-mobile.svg);
+    width: 100%;
+}

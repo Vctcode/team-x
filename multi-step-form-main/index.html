@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles/dist/globals-output.css" />
+
+    <title>Frontend Mentor | Multi-step form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="min-h-full">
+    <main class="flex flex-col">
+      <nav class="my-bg-mb bg-cover h-[60px] flex py-6 justify-center gap-3">
+        <!-- Sidebar start -->
+        <span
+          class="color-white border border-black text-[12px] font-bold rounded-full flex justify-center items-center w-7 h-7"
+        >
+          1
+        </span>
+        <!-- <span class="sm:hidden">
+            Step 1 Your info
+        </span> -->
+
+        <span
+          class="color-white border border-black text-[12px] font-bold rounded-full flex justify-center items-center w-7 h-7"
+        >
+          2
+        </span>
+        <!-- <span>
+          Step 2 Select plan
+        </span> -->
+        <span
+          class="color-white border border-black text-[12px] font-bold rounded-full flex justify-center items-center w-7 h-7"
+        >
+          3
+        </span>
+        <!-- <span>
+          Step 3 Add-ons
+        </span> -->
+        <span
+          class="color-white border border-black text-[12px] font-bold rounded-full flex justify-center items-center w-7 h-7"
+        >
+          4</span
+        >
+        <!-- <span>
+            Step 4 Summary
+          </span> -->
+
+        <!-- Sidebar end -->
+      </nav>
+
+      <form class="h-[90vh]" id="form" action="#" method="post">
+        <div class="mb-[]" >
+          <!-- Step 1 start -->
+          <section
+            class="card hidden p-5 bg-white rounded w-[90%] mx-auto my-2"
+          >
+            <div class="step-title">
+              <div class="title font-bold text-2xl">Personal info</div>
+
+              <div class="descr text-gray-400 my-3 w-[80%]">
+                Please provide your name, email address, and phone number.
+              </div>
+            </div>
+
+            <label for="name" class="my-3 block"
+              >Name
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="block border px-3 py-2 rounded w-[100%]"
+                placeholder="e.g. Stephen King"
+              />
+            </label>
+
+            <label for="email" class="my-3 block">
+              Email Address
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="block border px-3 py-2 rounded w-[100%]"
+                placeholder="e.g. stephenking@lorem.com"
+              />
+            </label>
+
+            <label for="phone-number" class="my-3 block">
+              Phone Number
+              <input
+                type="tel"
+                name="phone-number"
+                id="phoneNumber"
+                class="block border px-3 py-2 rounded w-[100%]"
+                placeholder="e.g. +1 234 567 890"
+              />
+            </label>
+          </section>
+          <!-- Step 1 end -->
+
+          <!-- Step 2 start -->
+          <section
+            class="card hidden p-5 bg-white rounded w-[90%] mx-auto my-2"
+          >
+            <div class="step-title">
+              <div class="title font-bold text-2xl">Select your plan</div>
+
+              <div class="descr text-gray-400 my-3 w-[80%]">
+                You have the option of monthly or yearly billing.
+              </div>
+            </div>
+
+            <section class="flex gap-3 flex-col my-2">
+              <div
+                class="border flex p-4 rounded gap-3 items-center cursor-pointer active:border-black"
+              >
+                <img src="./assets/images/icon-arcade.svg" alt="arcade" />
+                <div class="">
+                  Arcade
+                  <span class="block text-gray-400 text-sm">$9/mo</span>
+                </div>
+              </div>
+
+              <div
+                class="border flex p-4 rounded gap-3 items-center cursor-pointer active:border-black"
+              >
+                <img src="./assets/images/icon-advanced.svg" alt="arcade" />
+                <div class="">
+                  Advanced
+                  <span class="block text-gray-400 text-sm">$12/mo</span>
+                </div>
+              </div>
+
+              <div
+                class="border flex p-4 rounded gap-3 items-center cursor-pointer active:border-black"
+              >
+                <img src="./assets/images/icon-pro.svg" alt="arcade" />
+                <div class="">
+                  Pro
+                  <span class="block text-gray-400 text-sm">$15/mo</span>
+                </div>
+              </div>
+            </section>
+
+            <div
+              class="flex bg-slate-100 p-3 mb-3 justify-center items-center rounded text-[14px]"
+            >
+              Monthly
+              <span
+                class="w-8 h-4 bg-blue-700 rounded-3xl mx-3 px-0.5 flex items-center"
+              >
+                <span class="w-3 h-3 rounded-full bg-white inline-block"></span>
+              </span>
+              Yearly
+            </div>
+          </section>
+          <!-- Step 2 end -->
+
+          <!-- Step 3 start -->
+          <section
+            class="card hidden p-5 bg-white rounded w-[90%] mx-auto my-2"
+          >
+            <div class="step-title">
+              <div class="title font-bold text-2xl">Pick add-ons</div>
+
+              <div class="descr text-gray-400 my-3 w-[80%]">
+                Add-ons help enhance your gaming experience.
+              </div>
+            </div>
+            <section class="flex gap-3 flex-col my-2">
+              <div
+                class="border flex p-4 rounded gap-3 items-center justify-between cursor-pointer active:border-black"
+              >
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" class="h-5 w-5 rounded" />
+                  <div class="">
+                    Online service
+                    <span class="block text-gray-400 text-sm"
+                      >Access to multiplayer games</span
+                    >
+                  </div>
+                </div>
+
+                <div class="text-sm">+$1/mo</div>
+              </div>
+
+              <div
+                class="border flex p-4 rounded gap-3 items-center justify-between cursor-pointer active:border-black"
+              >
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" class="h-5 w-5 rounded" />
+
+                  <div class="">
+                    Larger storage
+                    <span class="block text-gray-400 text-sm">
+                      Extra 1TB of cloud save</span
+                    >
+                  </div>
+                </div>
+
+                <div class="text-sm">+$2/mo</div>
+              </div>
+
+              <div
+                class="border flex p-4 rounded gap-3 items-center justify-between cursor-pointer active:border-black"
+              >
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" class="h-5 w-5 rounded" />
+
+                  <div class="">
+                    Customizable profile
+                    <span class="block text-gray-400 text-sm"
+                      >Custom theme on your profile</span
+                    >
+                  </div>
+                </div>
+
+                <div class="text-sm">+$2/mo</div>
+              </div>
+            </section>
+          </section>
+          <!-- Step 3 end -->
+
+          <!-- Step 4 start -->
+          <section
+            class="card hidden p-5 bg-white rounded w-[90%] mx-auto my-2"
+          >
+            <div class="step-title">
+              <div class="title font-bold text-2xl">Finishing up</div>
+
+              <div class="descr text-gray-400 my-3 w-[80%]">
+                Double-check everything looks OK before confirming.
+              </div>
+            </div>
+
+            <section class="flex flex-col my-2">
+              <div
+                class="flex p-4 rounded gap-3 items-center justify-between cursor-pointer active:border-black"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="">
+                    Larger storage
+                    <span class="block text-gray-400 text-sm">
+                      Extra 1TB of cloud save</span
+                    >
+                  </div>
+                </div>
+
+                <div class="text-sm">+$2/mo</div>
+              </div>
+
+              <!-- Dynamically add subscription and add-on selections here -->
+              <div>Total (per month/year)</div>
+            </section>
+          </section>
+          <!-- Step 4 end -->
+
+          <!-- Step 5 start -->
+          <section
+            class="last-card hidden px-5 py-20 bg-white rounded w-[90%] mx-auto my-2"
+          >
+            <div class="step-title flex flex-col justify-center items-center">
+              <img
+                class="w-14"
+                src="./assets/images/icon-thank-you.svg"
+                alt="thank-you"
+                srcset=""
+              />
+              <div class="title font-bold text-2xl my-4">Thank you!</div>
+
+              <div class="descr text-gray-400 w-[90%] text-center">
+                Thanks for confirming your subscription! We hope you have fun
+                using our platform. If you ever need support, please feel free
+                to email us at support@loremgaming.com.
+              </div>
+            </div>
+          </section>
+          <!-- Step 5 end -->
+        </div>
+
+        <!-- next, previous and submission buttons -->
+        <div class="flex justify-between bg-white px-6 py-4 text-[14px]">
+          <button type="button" id="prevBtn" onclick="pageChange(-1)">
+            Go Back
+          </button>
+          <button
+            class="bg-blue-950 text-white px-4 py-3 rounded"
+            type="button"
+            id="nextBtn"
+            onclick="pageChange(1)"
+          >
+            Next Step
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
+<!-- npx tailwindcss -i ./styles/src/globals.css -o ./styles/dist/globals-output.css --watch -->

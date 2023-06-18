@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style imports -->
+    <link rel="stylesheet" href="./styles/dist/global.css" />
+
+    <!-- title -->
+    <title>Home | Tailwindcss/HTML with API integration</title>
+  </head>
+  <body>
+    <main class="main-wrapper bg-blue-50 min-h-screen box-border p-2">
+      <div class="wrapper2 mx:auto">
+        <nav class="flex px-3 py-4 md:justify-center">
+          <ul>
+            <li>
+              <span class="font-bold text-lg">Top software engineers</span>
+              <div
+                id="userCount"
+                class="inline-flex ml-2 bg-blue-900 text-white px-2 rounded"
+              ></div>
+            </li>
+          </ul>
+        </nav>
+
+        <section
+          class="user-card-wrapper"
+          id="userCardWrapper"
+        >
+        <p class="my-20 text-center text-gray-400 text-[16px]">
+          loading data...
+        </p>
+          
+        </section>
+      </div>
+    </main>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
+
+<!--  npx tailwindcss -i ./styles/global.css -o ./styles/dist/global.css --watch -->
